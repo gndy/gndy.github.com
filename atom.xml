@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://gndy.github.io/atom.xml" rel="self"/>
   <link href="http://gndy.github.io/"/>
-  <updated>2014-03-25T11:36:46+08:00</updated>
+  <updated>2014-04-03T09:55:05+08:00</updated>
   <id>http://gndy.github.io/</id>
   <author>
     <name><![CDATA[GNDY]]></name>
@@ -12,5 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Gantt_plot]]></title>
+    <link href="http://gndy.github.io/blog/2014/04/03/gantt-plot/"/>
+    <updated>2014-04-03T09:31:41+08:00</updated>
+    <id>http://gndy.github.io/blog/2014/04/03/gantt-plot</id>
+    <content type="html"><![CDATA[<h3>The Gantt_plot</h3>
+
+<p><img src="http://gndy.github.io/images/Gantt.png"></p>
+]]></content>
+  </entry>
   
 </feed>
